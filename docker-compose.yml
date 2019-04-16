@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  mydb:
+    container_name: mysql_57
+    image: mysql:5.7
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: pure_bot
+    ports:
+      - "3306:3306"
+  web:
+    image: webdevops/php-apache:7.3
+    volumes:
+      - ./:/var/www
+    environment:
+        WEB_DOCUMENT_ROOT: /var/www/public
+    ports:
+      - 80:80
+      - 443:443
+    container_name: php_73
+    depends_on:
+      - mydb
+    links:
+      - mydb
+    stdin_open: true
+    tty: true
