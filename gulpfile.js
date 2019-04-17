@@ -14,7 +14,7 @@ var resources = 'resources/'
 var assets = 'public/assets/'
 
 var style_resources = resources+'scss/**/*.scss'
-var script_resources = resources+'js/custom/**/*.js'
+var script_resources = resources+'js/*/**/*.js'
 
 var style_assets= assets+'css/'
 var script_assets = assets+'js/'

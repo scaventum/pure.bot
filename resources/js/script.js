@@ -2,4 +2,4 @@
 
 //Call sidebar.js
 let sideBar = new SideBar()
-sideBar.init(); 
+sideBar.init()
