@@ -1,6 +1,11 @@
 body {
     color: $hex7-grey;
-    font-family: 'Cute Font', cursive;
+    font-family: $font-secondary;
+    font-weight: 300;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: $font-primary;
 }
 
 .pure-img-responsive {
@@ -81,6 +86,7 @@ The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
 */
 #menu {
+    font-family: $font-primary;
     margin-left: -150px; /* "#menu" width */
     width: 150px;
     position: fixed;
