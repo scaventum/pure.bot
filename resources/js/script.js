@@ -3,3 +3,7 @@
 //Call sidebar.js
 let sideBar = new SideBar()
 sideBar.init()
+
+//Call animations.js
+let animations = new Animations()
+animations.init()

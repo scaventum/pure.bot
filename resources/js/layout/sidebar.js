@@ -1,6 +1,12 @@
+/*
+*
+SideBar Class - by scaventum from Pure.css
+*
+*/
+
 class SideBar {
     constructor() {
-        this.attr_helper = new AttrHelper();
+        this.attr_helper = new AttrHelper()
     }
 
     init() {
@@ -9,7 +15,7 @@ class SideBar {
             menuLink = document.getElementById('menuLink'),
             content  = document.getElementById('main')
 
-        let toggleElement = [
+        let toggledElement = [
             layout,
             menu,
             menuLink
@@ -17,12 +23,12 @@ class SideBar {
         active = 'active'
 
         menuLink.onclick = (e) => {
-            this.toggleSideBar(e, toggleElement, active)
+            this.toggleSideBar(e, toggledElement, active)
         };
     
         content.onclick = (e) => {
             if (this.attr_helper.hasClass(menu,active)) {
-                this.toggleSideBar(e, toggleElement, active)
+                this.toggleSideBar(e, toggledElement, active)
             }
         };
     }
