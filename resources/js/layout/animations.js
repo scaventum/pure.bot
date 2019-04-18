@@ -38,7 +38,8 @@ class Animations {
 
     animate(animation){
         let animation_type = animation.dataset.animation
-        let animation_speed = (isNaN(animation.dataset.animationSpeed) ? this.speed : animation.dataset.animationSpeed ) || this.speed
+        let animation_speed = animation.dataset.animationSpeed || this.speed
+        animation_speed = (isNaN(animation_speed) ? this.speed : animation_speed )
 
         if (typeof this[animation_type] === "function") { 
             this[animation_type](animation,animation_speed)
