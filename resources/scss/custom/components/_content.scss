@@ -17,10 +17,12 @@ The content `<div>` is where all your content goes.
     border-bottom: 1px solid $e-grey;
     h1 {
         margin: 0.2em 0;
+        font-weight: 300;
         //font-size: 3em;
     }
     h2 {
         color: $hex9-grey;
+        font-weight: 300;
         padding: 0;
         margin-top: 0;
     }
