@@ -37,7 +37,7 @@ class Animations {
     }
 
     animate(animation){
-        let animation_type = animation.dataset.animation
+        let animation_type = animation.dataset.animation || animation.getAttribute('animation')
         let animation_speed = animation.dataset.animationSpeed || this.speed
         animation_speed = isNaN(animation_speed) ? this.speed : animation_speed
 
@@ -55,8 +55,7 @@ class Animations {
         animation.innerHTML = temp_string
         temp_string += full_string.charAt(i)
 
-        let blink = 1000/speed > 1 ? 1000/speed : 1
-        if(i%blink >= 0 && i%blink < (1000/speed)/2 && i < limit) animation.innerHTML = temp_string + " <span style='font-weight:900'>_</span>"
+        if(i > 0 && i < limit) animation.innerHTML = temp_string +"_"
 
         if(i < limit){
             i++;

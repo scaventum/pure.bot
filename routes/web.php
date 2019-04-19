@@ -15,6 +15,7 @@
 //     return $router->app->version();
 // });
 
-$router->get('/', [
-    'as' => 'pages', 'uses' => 'PagesController@index'
-]);
+$router->get('/', ['as' => 'index', 'uses' => 'PagesController@index']);
+$router->get('/features', ['as' => 'features', 'uses' => 'PagesController@features']);
+$router->get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
+$router->get('/contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);

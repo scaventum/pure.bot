@@ -1,0 +1,151 @@
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+*/
+#menu {
+    font-family: $font-primary;
+    margin-left: -150px; /* "#menu" width */
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: $color-primary;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    
+    /*
+    All anchors inside the menu should be styled like this.
+    */
+    a {
+        color: $hex9-grey;
+        border: none;
+        padding: 0.6em 0 0.6em 0.6em;
+    }
+
+    /*
+    Remove all background/borders, since we are applying them to #menu.
+    */
+    .pure-menu,
+    .pure-menu ul {
+        border: none;
+        background: transparent;
+    }
+
+    /*
+    Add that light border to separate items into groups.
+    */
+    .pure-menu ul,
+    .pure-menu .menu-item-divided {
+        border-top: 1px solid $hex3-grey;
+        /*
+        Change color of the anchor links on hover/focus.
+        */
+        li a:hover,
+        li a:focus {
+            background: $hex3-grey;
+        }
+    }
+        
+
+    /*
+    This styles the selected menu item `<li>`.
+    */
+    .pure-menu-selected,
+    .pure-menu-heading {
+        text-transform: none;
+    }
+
+    /*
+    This styles a link within a selected menu item `<li>`.
+    */
+    .pure-menu-selected {
+        background: $hex4-grey;
+        a {
+            color: $white;
+        }
+    }
+
+    /*
+    This styles the menu heading.
+    */
+    .pure-menu-heading {
+        background: $color-secondary;
+        font-size: 110%;
+        color: $white;
+        margin: 0;
+    }
+}
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+.menu-link {
+    position: fixed;
+    display: block; /* show this only on small screens */
+    top: 0;
+    left: 0; /* "#menu width" */
+    background: $black;
+    background: rgba($black,0.7);
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.1em 1.6em;
+
+    &:hover,
+    &:focus {
+        background: $black;
+    }
+
+    span {
+        position: relative;
+        display: block;
+    }
+
+    span,
+    span:before,
+    span:after {
+        background-color: $white;
+        width: 100%;
+        height: 0.2em;
+    }
+
+    span:before,
+    span:after {
+        position: absolute;
+        margin-top: -0.6em;
+        content: " ";
+    }
+
+    span:after {
+        margin-top: 0.6em;
+    }
+}
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: $sm) {
+
+    #menu {
+        left: 150px;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 150px;
+        display: none;
+    }
+}
