@@ -13,6 +13,10 @@
                 <a href="/features" class="pure-menu-link">features</a>
             </li>
 
+            <li class="pure-menu-item {{ app('request')->is('changelog')? 'pure-menu-selected':'' }}">
+                <a href="/changelog" class="pure-menu-link">changelog</a>
+            </li>
+
             <li class="pure-menu-item {{ app('request')->is('about')? 'pure-menu-selected':'' }} menu-item-divided ">
                 <a href="/about" class="pure-menu-link">about</a>
             </li>

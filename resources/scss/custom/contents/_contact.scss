@@ -1,0 +1,46 @@
+.contact{
+    &__item{
+        padding: 0.6rem;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align:center;
+        a{
+            text-decoration: none;
+            color: $hex6-grey;
+            small{
+                font-size:0.6rem;
+            }
+            .fas,.far,.fab{
+                font-size:1.2rem;
+                display:block;
+                margin-bottom:0.5rem;
+            }
+            &:hover{
+                color: $color-secondary;
+            }
+        }
+    }
+}
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: $sm) {
+
+    .contact{
+        &__item{
+            padding: 1rem;
+            a{
+                small{
+                    font-size:0.8rem;
+                }
+                .fas,.far,.fab{
+                    font-size:1.6rem;
+                }
+            }
+        }
+    }
+}

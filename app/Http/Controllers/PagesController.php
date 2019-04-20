@@ -21,6 +21,10 @@ class PagesController extends Controller
     public function features(){
         return view("pages.features");
     }
+
+    public function changelog(){
+        return view("pages.changelog");
+    }
     
     public function about(){
         return view("pages.about");

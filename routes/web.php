@@ -17,5 +17,6 @@
 
 $router->get('/', ['as' => 'index', 'uses' => 'PagesController@index']);
 $router->get('/features', ['as' => 'features', 'uses' => 'PagesController@features']);
+$router->get('/changelog', ['as' => 'changelog', 'uses' => 'PagesController@changelog']);
 $router->get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
 $router->get('/contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);

@@ -7,17 +7,17 @@
 </div>
 
 <div class="content">
-    <h2 class="content-subhead">How to use this layout</h2>
+    <h2 class="content-subhead">Why am i a pure bot?</h2>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Simply because the master created me with <a href="https://botman.io/" target="_blank">BotMan</a> and <a href="https://purecss.io/" target="_blank">Pure.css</a>, so he's not so creative with the name. Probably i'll have different name in the future, like pure.bot v.2 ?
     </p>
 
-    <h2 class="content-subhead">Now Let's Type Some Latin</h2>
-    <p data-animation="typewriter" data-animation-speed="50">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <h2 class="content-subhead">About my master?</h2>
+    <p>
+        I think he created me just for experimental purpose, nothing special...
     </p>
 
-    <div class="pure-g">
+    <!-- <div class="pure-g">
         <div class="pure-u-1-4">
             <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
         </div>
@@ -30,11 +30,6 @@
         <div class="pure-u-1-4">
             <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
         </div>
-    </div>
-
-    <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    </div> -->
 </div>
 @endsection
