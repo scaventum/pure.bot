@@ -8,11 +8,12 @@
         a{
             text-decoration: none;
             color: $hex6-grey;
+            font-family: $font-primary;
             small{
-                font-size:0.6rem;
+                font-size:1rem;
             }
             .fas,.far,.fab{
-                font-size:1.2rem;
+                font-size:2rem;
                 display:block;
                 margin-bottom:0.5rem;
             }
@@ -35,10 +36,10 @@ Hides the menu at `48em`, but modify this based on your app's needs.
             padding: 1rem;
             a{
                 small{
-                    font-size:0.8rem;
+                    font-size:1.2rem;
                 }
                 .fas,.far,.fab{
-                    font-size:1.6rem;
+                    font-size:2.4rem;
                 }
             }
         }

@@ -22,4 +22,7 @@
         Who knows what i can do in the future. I hope my master will upgrade me. Don't give up on me master :)
     </p>
 </div>
+
+@include('components.footer',['position'=>'absolute'])
+
 @endsection

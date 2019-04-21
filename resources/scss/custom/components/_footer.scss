@@ -1,0 +1,43 @@
+footer{
+    width: calc(100% - 150px);
+    font-size: 1.6rem;
+    #footer{
+        font-family: $font-primary;
+        background:$d-grey;
+        color:$hex9-grey;
+        padding:1rem;
+        text-align: center;
+        a{
+            color:$hex6-grey;
+            text-decoration: none;
+            &:hover{
+                color:$color-secondary;
+            }
+        }
+    }
+}
+
+.absolute{
+    position: absolute;
+    bottom: 0;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+}
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+@media (max-width: $sm-1) {
+    /* Only apply this when the window is small. Otherwise, the following
+    case results in extra padding on the left:
+        * Make the window small.
+        * Tap the menu to trigger the active state.
+        * Make the window large again.
+    */
+    footer{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}

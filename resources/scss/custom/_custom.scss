@@ -40,7 +40,7 @@ Add transition to containers so they can push in and out.
 This is the parent `<div>` that contains the menu and the content area.
 */
 #layout {
-    height: 100%;
+    min-height: 100%;
     position: relative;
     left: 0;
     padding-left: 0;
@@ -54,6 +54,10 @@ This is the parent `<div>` that contains the menu and the content area.
             left: 150px;
         }
     }
+}
+
+.h100-vh{
+    height:100vh !important;
 }
 
 /* -- Responsive Styles (Media Queries) ------------------------------------- */

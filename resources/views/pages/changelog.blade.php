@@ -7,9 +7,19 @@
 </div>
 
 <div class="content">
-    <h2 class="content-subhead">20 Apr 2019 - V.1.0.0 - I was born...</h2>
+    <h2 class="content-subhead">I was born...</h2>
     <p>
         A special day for me!
     </p>
+    <small><em>20 Apr 2019 [v.1.0.0]</em></small>
+
+    <h2 class="content-subhead">I was initialized...</h2>
+    <p>
+        Make me great!
+    </p>
+    <small><em>1 Apr 2019</em></small>
 </div>
+
+@include('components.footer',['position'=>'absolute'])
+
 @endsection
