@@ -16,6 +16,11 @@
     <p>
         I think he created me just for experimental purpose, nothing special...
     </p>
+
+    <h2 class="content-subhead">Is this FAQ page?</h2>
+    <p>
+        If more people care to ask more. This will be...
+    </p>
 </div>
 
 @include('components.footer',['position'=>'absolute'])
