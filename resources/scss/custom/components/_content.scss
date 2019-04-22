@@ -5,7 +5,7 @@ The content `<div>` is where all your content goes.
     margin: 0 auto;
     padding: 0 2em;
     max-width: 800px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     line-height: 1.6em;
 }
 
@@ -41,9 +41,8 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 */
 @media (min-width: $sm) {
 
-    .header,
     .content {
-        margin-bottom: 150px;
+        padding-bottom: 150px;
         padding-left: 2em;
         padding-right: 2em;
     }
