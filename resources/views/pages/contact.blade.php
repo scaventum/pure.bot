@@ -12,6 +12,12 @@
                 </a>
             </div>
             <div class="pure-u-1-2 pure-u-sm-1-4 contact__item">
+                <a href="mailto:ryan@scaventum.com">
+                    <i class="fas fa-at"></i>
+                    <small>E-mail</small>
+                </a>
+            </div>
+            <div class="pure-u-1-2 pure-u-sm-1-4 contact__item">
                 <a href="https://www.linkedin.com/in/ryan-djoenaidi-383b96166/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                     <small>LinkedIn</small>
@@ -45,12 +51,6 @@
                 <a href="https://github.com/scaventum" target="_blank">
                     <i class="fab fa-github"></i>
                     <small>GitHub</small>
-                </a>
-            </div>
-            <div class="pure-u-1-2 pure-u-sm-1-4 contact__item">
-                <a href="https://stackoverflow.com/users/10670079/ryan-rr" target="_blank">
-                    <i class="fab fa-stack-overflow"></i>
-                    <small>Stack Overflow</small>
                 </a>
             </div>
         </div>
