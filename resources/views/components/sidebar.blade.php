@@ -6,7 +6,7 @@
 
 <div id="menu">
     <div class="pure-menu">
-        <a class="pure-menu-heading" href="/">pure.bot</a>
+        <a class="pure-menu-heading" href="/">{{ config('app.name') }}</a>
 
         <ul class="pure-menu-list">
             <li class="pure-menu-item {{ app('request')->is('features')? 'pure-menu-selected':'' }}">

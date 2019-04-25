@@ -15,8 +15,11 @@
 //     return $router->app->version();
 // });
 
-$router->get('/', ['as' => 'index', 'uses' => 'PagesController@index']);
-$router->get('/features', ['as' => 'features', 'uses' => 'PagesController@features']);
-$router->get('/changelog', ['as' => 'changelog', 'uses' => 'PagesController@changelog']);
-$router->get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
-$router->get('/contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);
+Route::get('/', ['as' => 'index', 'uses' => 'PagesController@index']);
+Route::get('/features', ['as' => 'features', 'uses' => 'PagesController@features']);
+Route::get('/changelog', ['as' => 'changelog', 'uses' => 'PagesController@changelog']);
+Route::get('/about', ['as' => 'about', 'uses' => 'PagesController@about']);
+Route::get('/contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');

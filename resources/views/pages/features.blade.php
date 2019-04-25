@@ -1,10 +1,8 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="header">
-    <h1 data-animation="typewriter">the least i can do...</h1>
-    <h2>...and i wish to learn</h2>
-</div>
+
+@include('components.header',['title'=>'the least i can do...', 'subtitle' => '...and i wish to learn'])
 
 <div class="content">
     <h2 class="content-subhead">You can chat with me...</h2>
