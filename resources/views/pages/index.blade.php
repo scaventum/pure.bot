@@ -7,7 +7,7 @@
     </div>
 
     <div class="jumbotron">
-        <h1 data-animation="typewriter">Hi, i'm a bot and still pure...</h1>
+        <h1 data-animation="typewriter">Hi, bot's listening...</h1>
         <h2>There's box down there. You can say hi too.</h2>
     </div>
 
