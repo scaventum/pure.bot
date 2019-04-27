@@ -1,0 +1,25 @@
+.typwriter{
+    &__blink{
+        -webkit-animation: typwriter-blink 0.75s steps(1) infinite; /* Safari 4+ */
+        -moz-animation:    typwriter-blink 0.75s steps(1) infinite; /* Fx 5+ */
+        -o-animation:      typwriter-blink 0.75s steps(1) infinite; /* Opera 12+ */
+        animation:         typwriter-blink 0.75s steps(1) infinite; /* IE 10+, Fx 29+ */
+    }
+}
+
+@-webkit-keyframes typwriter-blink {
+    0%   { opacity: 1; }
+    50% { opacity: 0; }
+}
+@-moz-keyframes typwriter-blink {
+    0%   { opacity: 1; }
+    50% { opacity: 0; }
+}
+@-o-keyframes typwriter-blink {
+    0%   { opacity: 1; }
+    50% { opacity: 0; }
+}
+@keyframes typwriter-blink {
+    0%   { opacity: 1; }
+    50% { opacity: 0; }
+}

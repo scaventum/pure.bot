@@ -55,7 +55,7 @@ class Animations {
         animation.innerHTML = temp_string
         temp_string += full_string.charAt(i)
 
-        if(i > 0 && i < limit) animation.innerHTML = temp_string +"_"
+        animation.innerHTML = temp_string +"<span class='typwriter__blink'>_</span>"
 
         if(i < limit){
             i++;

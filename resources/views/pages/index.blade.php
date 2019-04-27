@@ -22,7 +22,7 @@
                     <input type="text" id="message" placeholder="type something here...">
                 </div>
                 <div class="pure-u-1-4  pure-u-sm-1-8">
-                    <button type="submit" id="send" class="pure-button pure-button-primary">
+                    <button type="submit" id="send" class="pure-button button-secondary">
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </div>
