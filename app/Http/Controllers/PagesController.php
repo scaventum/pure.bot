@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Contact;
 use App\Changelog;
+use App\Feature;
 
 class PagesController extends Controller
 {
@@ -39,6 +40,10 @@ class PagesController extends Controller
     }
     
     public function features(){
+        $features = Feature::orderBy('order','Asc')->get();
+
+        $this->data["features"] = $features;
+
         return view("pages.features",$this->data);
     }
 
