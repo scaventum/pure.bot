@@ -1,6 +1,7 @@
 footer{
     width: calc(100% - 150px);
     #footer{
+        width: calc(100% - 2rem);
         background:$d-grey;
         color:$hex9-grey;
         padding:1rem;
@@ -37,4 +38,9 @@ footer{
     footer{
         width: 100%;
     }
+    
+    .fixed{
+        position: absolute;
+    }
+
 }
