@@ -11,6 +11,7 @@ class ChatBox {
         this.chatbox_form = ''
         this.welcome = ''
         this.chatbox = ''
+        this.initiated = false
     }
 
     init() {
@@ -22,17 +23,26 @@ class ChatBox {
 
             this.chatbox_form.addEventListener('submit', e => {
                 e.preventDefault()
-                this.initiateContainer()
+                if(this.initiated){
+                    this.fetchResponse()
+                }else{
+                    this.initiateContainer()
+                }
             });
         }
     }
 
     initiateContainer(){
+        this.initiated = true;
         this.chatbox_form.querySelector('#message').value = ''
         this.attr_helper.removeElementsByClass(this.welcome)
         if (!this.attr_helper.hasClass(this.container, 'h-100')) {
             this.attr_helper.toggleClass(this.container, 'h-100') 
         }
+    }
+
+    fetchResponse(){
+
     }
 }
 
