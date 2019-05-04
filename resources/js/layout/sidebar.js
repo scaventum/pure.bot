@@ -40,3 +40,5 @@ class SideBar {
         }) 
     }
 }
+
+let sideBar = new SideBar()

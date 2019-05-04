@@ -3,10 +3,10 @@
 @section('content')
 <div class="container-space-between h-100vh-footer">
     
-    <div class="jumbotron">
+    <div class="jumbotron welcome">
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron welcome">
         <h1 data-animation="typewriter">Hi, bot's listening
         ...</h1>
         <h2>There's box down there. You can say hi too.</h2>

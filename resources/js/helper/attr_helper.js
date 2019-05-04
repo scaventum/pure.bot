@@ -21,4 +21,12 @@ class AttrHelper {
     hasClass(element, className) {
       return element.className.indexOf(className) !== -1
     }
+
+    removeElementsByClass(elements) {
+      
+      while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+      }
+     
+    }
 }

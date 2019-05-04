@@ -71,3 +71,5 @@ class Animations {
     }
 }
 
+let animations = new Animations()
+

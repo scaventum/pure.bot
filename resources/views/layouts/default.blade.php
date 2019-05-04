@@ -7,7 +7,7 @@
     <meta name="viewport" content="height=device-height, 
         width=device-width, initial-scale=1.0, 
         minimum-scale=1.0, maximum-scale=1.0, 
-        user-scalable=no, target-densitydpi=device-dpi">
+        user-scalable=no">
     <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>{{ config('app.name') }}</title>
     
