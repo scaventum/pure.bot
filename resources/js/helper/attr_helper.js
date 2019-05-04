@@ -23,10 +23,10 @@ class AttrHelper {
     }
 
     removeElementsByClass(elements) {
-      
-      while(elements.length > 0){
-        elements[0].parentNode.removeChild(elements[0]);
+      if(elements.length > 0){
+        for(let i = elements.length - 1; i >= 0; i--){
+          elements[i].parentNode.removeChild(elements[i]);
+        }
       }
-     
     }
 }

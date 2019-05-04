@@ -7,20 +7,32 @@ ChatBox Class - by scaventum
 class ChatBox {
     constructor() {
         this.attr_helper = new AttrHelper()  
+        this.container = ''
+        this.chatbox_form = ''
+        this.welcome = ''
+        this.chatbox = ''
     }
 
     init() {
-        var container   = document.getElementsByClassName('chat-box')[0].parentNode
-        var chatbox   = document.getElementsByClassName('chat-box')[0]
-        var welcome     = document.getElementsByClassName('welcome')
+        this.chatbox   = document.querySelector('.chat-box')
+        if(this.chatbox !== null){
+            this.container = this.chatbox.parentNode,
+            this.chatbox_form = this.chatbox.querySelector('.chat-box__form'),
+            this.welcome = document.getElementsByClassName('welcome')
 
-        var chatbox_form = chatbox.querySelector('form');
-        chatbox_form.addEventListener('submit', e => {
-            chatbox_form.querySelector('#message').value = ''
-            e.preventDefault()
-            this.attr_helper.removeElementsByClass(welcome)
-            this.attr_helper.toggleClass(container, 'h-100') 
-        });
+            this.chatbox_form.addEventListener('submit', e => {
+                e.preventDefault()
+                this.initiateContainer()
+            });
+        }
+    }
+
+    initiateContainer(){
+        this.chatbox_form.querySelector('#message').value = ''
+        this.attr_helper.removeElementsByClass(this.welcome)
+        if (!this.attr_helper.hasClass(this.container, 'h-100')) {
+            this.attr_helper.toggleClass(this.container, 'h-100') 
+        }
     }
 }
 
