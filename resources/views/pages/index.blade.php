@@ -7,9 +7,10 @@
     </div>
 
     <div class="jumbotron welcome">
-        <h1 data-animation="typewriter">Hi, bot's listening
-        ...</h1>
-        <h2>There's box down there. You can say hi too.</h2>
+        <h1 data-animation="typewriter">Hi, bot's listening...</h1>
+        <h2 data-aos="fade-down">
+            There's box down there. You can say hi too.
+        </h2>
     </div>
 
     <!-- <div class="jumbotron h-100"> -->

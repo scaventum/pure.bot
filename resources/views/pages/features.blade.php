@@ -6,8 +6,8 @@
 
 <div class="content">
     @foreach($features as $feature)
-        <h2 class="content-subhead">{{ $feature->title }}</h2>
-        <p>
+        <h2 class="content-subhead" data-aos="fade-up">{{ $feature->title }}</h2>
+        <p data-aos="fade-up">
             {{ $feature->description }}
         </p>
     @endforeach
