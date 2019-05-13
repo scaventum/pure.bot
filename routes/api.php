@@ -18,5 +18,4 @@ use Illuminate\Http\Request;
 // });
 
 // Route::post('/tasks', 'TaskController@store')->name('tasks.store');
-
-Route::post('/purebot', 'PurebotController@index')->name('purebot.index');
+Route::match(['post'], '/botman', 'BotManController@handle');

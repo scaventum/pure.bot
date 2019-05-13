@@ -46,26 +46,59 @@ class ChatBox {
         }
     }
 
-    chat(){
-        let message = this.chatbox_message_box.value
-        let purebot_message =''
-
+    chat() {
+        let message = this.chatbox_message_box.value;
         this.chatbox_message_box.value = ''
-        
+
         this.insertBubble(message,'text','human')
 
-        axios.post('/api/purebot', {
-            message: message
-        })
-        .then((response) => {
-            let purebot = response.data
-            purebot_message = purebot.response
-            this.insertBubble(purebot_message,'text','purebot')
-        })
-        .catch(function (error) {
+        let purebot_message = ''
+        let interactive = false
+        let attachment = null
+        let data = new FormData()
+        const postData = {
+            driver: 'web',
+            userId: '1',
+            message: message,
+            attachment,
+            interactive,
+            attachment_data: document.getElementById('attachment').files[0]
+        };
+
+        Object.keys(postData).forEach(key => data.append(key, postData[key]))
+
+        axios.post("/api/botman", data).then(response => {
+            const messages = response.data.messages || [];
+            messages.forEach(msg => {
+                //this._addMessage(msg.text, msg.attachment, false, msg);
+                purebot_message = msg.text
+                this.insertBubble(purebot_message,'text','purebot')
+            })
+        }).catch(function (error) {
             console.log(error)
         })
     }
+
+    // chat(){
+    //     let message = this.chatbox_message_box.value
+    //     let purebot_message =''
+
+    //     this.chatbox_message_box.value = ''
+        
+    //     this.insertBubble(message,'text','human')
+
+    //     axios.post('/botman', {
+    //         message: message
+    //     })
+    //     .then((response) => {
+    //         let purebot = response.data
+    //         purebot_message = purebot.response
+    //         this.insertBubble(purebot_message,'text','purebot')
+    //     })
+    //     .catch(function (error) {
+    //         console.log(error)
+    //     })
+    // }
 
     insertBubble(message,type,source){
         //console.log("["+type+", "+source+"]: "+message)

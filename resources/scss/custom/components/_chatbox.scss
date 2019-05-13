@@ -6,21 +6,29 @@
     &__list{
         flex-grow: 1;
         overflow-y: scroll;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE 10+ */
+        &::-webkit-scrollbar { /* WebKit */
+            width: 0;
+            height: 0;
+        }
         &__bubble{
+            font-family: $font-primary;
             border-radius: 10px;
             color: $white;
             clear: both;
             padding:10px;
             margin: 10px;
+            text-align: justify;
             &__human{
                 float: right;
                 margin-left: 20px;
-                background-color: $color-secondary
+                background-color: $color-secondary;
             }
             &__purebot{
                 float: left;
                 margin-right: 20px;
-                background-color: $hex6-grey
+                background-color: $hex6-grey;
             }
         }
     }

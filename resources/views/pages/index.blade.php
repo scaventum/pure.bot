@@ -21,8 +21,9 @@
             </div>
             <form class="pure-form chat-box__form pure-g">
                 <div class="pure-u-3-4 pure-u-sm-7-8">
-                    <input type="text" id="message" placeholder="type something here...">
+                    <input type="text" id="message" placeholder="type something here..." autocomplete="off" >
                 </div>
+                <input type="file" class="ChatAttachment" id="attachment" value="Attachment" style="display:none;"/>
                 <div class="pure-u-1-4  pure-u-sm-1-8">
                     <button type="submit" id="send" class="pure-button button-secondary">
                         <i class="fas fa-paper-plane"></i>
